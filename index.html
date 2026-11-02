@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 Password Checker</h1>
+    <p class="subtitle">Test your password security in real time.</p>
+
+    <!-- Password Input Box -->
+    <div class="input-group">
+      <input type="password" id="password" placeholder="Type a password..." autocomplete="off">
+      <button id="toggle-btn" type="button">Show</button>
+    </div>
+
+    <!-- Visual Strength Bar -->
+    <div class="meter">
+      <div id="strength-bar"></div>
+    </div>
+    <p id="strength-label">Strength: <span>Empty</span></p>
+
+    <!-- Checklist -->
+    <ul class="checklist">
+      <li id="rule-length">❌ At least 8 characters</li>
+      <li id="rule-upper">❌ Includes uppercase letter</li>
+      <li id="rule-lower">❌ Includes lowercase letter</li>
+      <li id="rule-number">❌ Includes a number</li>
+      <li id="rule-special">❌ Includes a special character (!@#$%^&*)</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
